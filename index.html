@@ -6,9 +6,8 @@
 <title>Royal Spice Restaurant | Premium Demo</title>
 
 <style>
-/* ===== GLOBAL STYLES ===== */
+/* ===== GLOBAL ===== */
 * { box-sizing: border-box; }
-
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -16,17 +15,9 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
+section { padding: 70px 20px; }
+.container { max-width: 1200px; margin: auto; }
 h1,h2,h3 { margin-bottom: 10px; }
-
-section {
-    padding: 70px 20px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
 
 .btn {
     background: #c0392b;
@@ -35,7 +26,7 @@ section {
     text-decoration: none;
     border-radius: 4px;
     display: inline-block;
-    margin-top: 10px;
+    margin: 10px 5px 0;
 }
 
 /* ===== HEADER ===== */
@@ -50,19 +41,16 @@ header {
     align-items: center;
     text-align: center;
 }
-
 header h1 { font-size: 50px; }
 header p { font-size: 20px; }
 
 /* ===== ABOUT ===== */
 .about { background: #fff; }
-
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
-
 .about img {
     width: 100%;
     border-radius: 8px;
@@ -70,13 +58,11 @@ header p { font-size: 20px; }
 
 /* ===== SPECIAL ===== */
 .special { background: #fdf2e9; }
-
 .special-items {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 20px;
 }
-
 .card {
     background: #fff;
     padding: 20px;
@@ -85,7 +71,6 @@ header p { font-size: 20px; }
 
 /* ===== MENU ===== */
 .menu-section { background: #fff; }
-
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -94,13 +79,11 @@ header p { font-size: 20px; }
 
 /* ===== GALLERY ===== */
 .gallery { background: #eee; }
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 15px;
 }
-
 .gallery img {
     width: 100%;
     border-radius: 6px;
@@ -108,16 +91,15 @@ header p { font-size: 20px; }
 
 /* ===== REVIEWS ===== */
 .reviews { background: #fff; }
-
 .review-box {
     background: #f9f9f9;
     padding: 20px;
     border-radius: 6px;
+    margin-bottom: 10px;
 }
 
 /* ===== FAQ ===== */
 .faq { background: #fdf2e9; }
-
 .faq-item {
     background: #fff;
     padding: 15px;
@@ -125,14 +107,16 @@ header p { font-size: 20px; }
     border-radius: 5px;
 }
 
-/* ===== CONTACT ===== */
-.contact { background: #fff; }
-
 /* ===== FOOTER ===== */
 footer {
     background: #222;
     color: #fff;
     padding: 40px 20px;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
 }
 
 /* ===== WHATSAPP ===== */
@@ -145,17 +129,17 @@ footer {
     padding: 16px;
     border-radius: 50%;
     text-decoration: none;
-    z-index: 9999;
+    font-size: 20px;
 }
 
-/* ===== SIMPLE VISITOR COUNTER ===== */
+/* ===== VISITOR COUNTER (LIGHT, NO BOX) ===== */
 #visitor-counter {
     position: fixed;
-    bottom: 15px;
     left: 15px;
+    bottom: 15px;
     font-size: 14px;
     color: #000;
-    font-weight: 500;
+    opacity: 0.75;
     z-index: 9999;
 }
 </style>
@@ -178,8 +162,10 @@ footer {
 <div class="container about-grid">
 <div>
 <h2>About Our Restaurant</h2>
-<p>Royal Spice Restaurant serves authentic Indian cuisine with hygiene and love.</p>
-<p>We believe in quality ingredients and memorable dining.</p>
+<p>
+Royal Spice Restaurant serves authentic Indian cuisine using fresh ingredients
+and traditional recipes. Hygiene, taste, and customer satisfaction are our top priorities.
+</p>
 </div>
 <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1">
 </div>
@@ -221,32 +207,67 @@ footer {
 </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact">
+<!-- GALLERY -->
+<section class="gallery">
 <div class="container">
-<h2>Contact & Location</h2>
-<p><strong>Address:</strong> Matunga East, Mumbai</p>
-<p><strong>Phone:</strong> +91 9XXXXXXXXX</p>
-<iframe src="https://maps.google.com/maps?q=matunga%20mumbai&output=embed"
-width="100%" height="250"></iframe>
+<h2>Gallery</h2>
+<div class="gallery-grid">
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+<img src="https://images.unsplash.com/photo-1525351484163-7529414344d8">
+<img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
+</div>
 </div>
 </section>
 
+<!-- REVIEWS -->
+<section class="reviews">
+<div class="container">
+<h2>Customer Reviews</h2>
+<div class="review-box">⭐⭐⭐⭐⭐ Amazing food and service!</div>
+<div class="review-box">⭐⭐⭐⭐ Hygienic & family friendly.</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+<div class="container">
+<h2>FAQs</h2>
+<div class="faq-item">Takeaway available? – Yes</div>
+<div class="faq-item">Home delivery? – Yes</div>
+<div class="faq-item">Veg & Non-Veg? – Yes</div>
+</div>
+</section>
+
+<!-- FOOTER -->
 <footer>
+<div class="container footer-grid">
+<div>
+<h3>Royal Spice</h3>
+<p>Authentic Indian Restaurant</p>
+</div>
+<div>
+<h3>Contact</h3>
+<p>📞 +91 9XXXXXXXXX</p>
+<p>📍 Mumbai</p>
+</div>
+<div>
+<h3>Credits</h3>
 <p>Demo Website by <strong>MyNetic Technologies</strong></p>
+</div>
+</div>
 </footer>
 
 <!-- VISITOR COUNTER -->
 <div id="visitor-counter">
-    Total Visitors: <span id="visitor-count">0</span>
+    Total Visitors: <span id="visitor-count">—</span>
 </div>
 
 <a class="whatsapp" href="https://wa.me/919999999999">💬</a>
 
-<!-- COUNTER SCRIPT -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("https://api.countapi.xyz/hit/mynetictech-royalspice-demo/visits")
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("https://api.countapi.xyz/hit/mynetictech.github.io-restaurant-demo/visits")
         .then(res => res.json())
         .then(data => {
             document.getElementById("visitor-count").innerText = data.value;
