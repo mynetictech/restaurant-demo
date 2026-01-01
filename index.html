@@ -1,267 +1,478 @@
-<!DOCTYPE html>  <html lang="en">  
-<head>  
-<meta charset="UTF-8">  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  
-<title>Royal Spice Restaurant | Premium Demo</title>  <style>  
-/* ===== GLOBAL STYLES ===== */  
-* {  
-    box-sizing: border-box;  
-}  
-body {  
-    margin: 0;  
-    font-family: 'Segoe UI', sans-serif;  
-    background: #f5f5f5;  
-    color: #333;  
-    line-height: 1.6;  
-}  
-h1,h2,h3 {  
-    margin-bottom: 10px;  
-}  
-section {  
-    padding: 70px 20px;  
-}  
-.container {  
-    max-width: 1200px;  
-    margin: auto;  
-}  
-.btn {  
-    background: #c0392b;  
-    color: #fff;  
-    padding: 12px 25px;  
-    text-decoration: none;  
-    border-radius: 4px;  
-    display: inline-block;  
-    margin-top: 10px;  
-}  
-  
-/* ===== HEADER ===== */  
-header {  
-    height: 100vh;  
-    background:  
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  
-      url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5')  
-      center/cover;  
-    color: #fff;  
-    display: flex;  
-    align-items: center;  
-    text-align: center;  
-}  
-header .container {  
-    width: 100%;  
-}  
-header h1 {  
-    font-size: 50px;  
-}  
-header p {  
-    font-size: 20px;  
-}  
-  
-/* ===== ABOUT ===== */  
-.about {  
-    background: #fff;  
-}  
-.about-grid {  
-    display: grid;  
-    grid-template-columns: 1fr 1fr;  
-    gap: 30px;  
-}  
-.about img {  
-    width: 100%;  
-    border-radius: 8px;  
-}  
-  
-/* ===== SPECIAL ===== */  
-.special {  
-    background: #fdf2e9;  
-}  
-.special-items {  
-    display: grid;  
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));  
-    gap: 20px;  
-}  
-.card {  
-    background: #fff;  
-    padding: 20px;  
-    border-radius: 8px;  
-}  
-  
-/* ===== MENU ===== */  
-.menu-section {  
-    background: #fff;  
-}  
-.menu-grid {  
-    display: grid;  
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));  
-    gap: 20px;  
-}  
-  
-/* ===== GALLERY ===== */  
-.gallery {  
-    background: #eee;  
-}  
-.gallery-grid {  
-    display: grid;  
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  
-    gap: 15px;  
-}  
-.gallery img {  
-    width: 100%;  
-    border-radius: 6px;  
-}  
-  
-/* ===== REVIEWS ===== */  
-.reviews {  
-    background: #fff;  
-}  
-.review-box {  
-    background: #f9f9f9;  
-    padding: 20px;  
-    border-radius: 6px;  
-}  
-  
-/* ===== FAQ ===== */  
-.faq {  
-    background: #fdf2e9;  
-}  
-.faq-item {  
-    background: #fff;  
-    padding: 15px;  
-    margin-bottom: 10px;  
-    border-radius: 5px;  
-}  
-  
-/* ===== CONTACT ===== */  
-.contact {  
-    background: #fff;  
-}  
-  
-/* ===== FOOTER ===== */  
-footer {  
-    background: #222;  
-    color: #fff;  
-    padding: 40px 20px;  
-}  
-.footer-grid {  
-    display: grid;  
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  
-    gap: 20px;  
-}  
-.whatsapp {  
-    position: fixed;  
-    bottom: 20px;  
-    right: 20px;  
-    background: #25d366;  
-    color: #fff;  
-    padding: 16px;  
-    border-radius: 50%;  
-    text-decoration: none;  
-}  
-</style>  </head>  <body>  <!-- HERO -->  <header>  
-<div class="container">  
-<h1>Royal Spice Restaurant</h1>  
-<p>Authentic Flavours • Family Dining • Great Taste</p>  
-<a class="btn" href="#menu">View Menu</a>  
-<a class="btn" href="https://wa.me/919999999999">Order on WhatsApp</a>  
-</div>  
-</header>  <!-- ABOUT -->  <section class="about">  
-<div class="container about-grid">  
-<div>  
-<h2>About Our Restaurant</h2>  
-<p>  
-Royal Spice Restaurant has been serving delicious food for years.  
-We believe in quality ingredients, authentic spices, and hygienic cooking.  
-</p>  
-<p>  
-Whether you dine in or order online, our mission is to deliver taste and happiness.  
-</p>  
-</div>  
-<img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1">  
-</div>  
-</section>  <!-- CHEF SPECIAL -->  <section class="special">  
-<div class="container">  
-<h2>Chef’s Special</h2>  
-<div class="special-items">  
-<div class="card">Paneer Tikka Special – ₹260</div>  
-<div class="card">Butter Chicken Deluxe – ₹340</div>  
-<div class="card">Veg Kolhapuri – ₹240</div>  
-</div>  
-</div>  
-</section>  <!-- MENU -->  <section class="menu-section" id="menu">  
-<div class="container">  
-<h2>Our Menu</h2>  
-<div class="menu-grid">  
-<div class="card">  
-<h3>Starters</h3>  
-<p>Paneer Tikka – ₹220</p>  
-<p>Veg Manchurian – ₹180</p>  
-<p>Chicken Lollipop – ₹260</p>  
-</div>  
-<div class="card">  
-<h3>Main Course</h3>  
-<p>Butter Paneer – ₹280</p>  
-<p>Dal Fry – ₹190</p>  
-<p>Chicken Curry – ₹320</p>  
-</div>  
-<div class="card">  
-<h3>Breads & Rice</h3>  
-<p>Butter Naan – ₹45</p>  
-<p>Jeera Rice – ₹180</p>  
-<p>Veg Fried Rice – ₹210</p>  
-</div>  
-</div>  
-</div>  
-</section>  <!-- GALLERY -->  <section class="gallery">  
-<div class="container">  
-<h2>Gallery</h2>  
-<div class="gallery-grid">  
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">  
-<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">  
-<img src="https://images.unsplash.com/photo-1525351484163-7529414344d8">  
-<img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">  
-</div>  
-</div>  
-</section>  <!-- REVIEWS -->  <section class="reviews">  
-<div class="container">  
-<h2>Customer Reviews</h2>  
-<div class="review-box">  
-⭐⭐⭐⭐⭐ Amazing food and great service!  
-</div>  
-<div class="review-box">  
-⭐⭐⭐⭐ Hygienic and family friendly.  
-</div>  
-</div>  
-</section>  <!-- FAQ -->  <section class="faq">  
-<div class="container">  
-<h2>Frequently Asked Questions</h2>  
-<div class="faq-item">Do you offer takeaway? – Yes</div>  
-<div class="faq-item">Home delivery available? – Yes</div>  
-<div class="faq-item">Veg & Non-Veg available? – Yes</div>  
-</div>  
-</section>  <!-- CONTACT -->  <section class="contact">  
-<div class="container">  
-<h2>Contact & Location</h2>  
-<p><strong>Address:</strong> Matunga East, Mumbai</p>  
-<p><strong>Phone:</strong> +91 9XXXXXXXXX</p>  
-<iframe src="https://maps.google.com/maps?q=matunga%20mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"  
-width="100%" height="250"></iframe>  
-</div>  
-</section>  <!-- FOOTER -->  <footer>  
-<div class="container footer-grid">  
-<div>  
-<h3>Royal Spice</h3>  
-<p>Authentic Indian Restaurant</p>  
-</div>  
-<div>  
-<h3>Contact</h3>  
-<p>📞 +91 9XXXXXXXXX</p>  
-<p>📍 Mumbai</p>  
-</div>  
-<div>  
-<h3>Credits</h3>  
-<p>Demo Website by <strong>MyNetic Technologies</strong></p>  
-</div>  
-</div>  
-</footer>  <a class="whatsapp" href="https://wa.me/919999999999">💬</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Spice Restaurant | Premium Demo</title>
 
-</body>  
+<style>
+
+/* =====================================================
+   GLOBAL RESET & BASE STYLES
+===================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 90px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+.btn {
+    background: #c0392b;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+/* =====================================================
+   HEADER / HERO
+===================================================== */
+header {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5")
+        center/cover;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* =====================================================
+   GRID SYSTEMS
+===================================================== */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 40px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+.about {
+    background: #fff;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 15px;
+}
+
+/* =====================================================
+   SERVICES / OFFERINGS
+===================================================== */
+.services {
+    background: #fdf2e9;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* =====================================================
+   MENU
+===================================================== */
+.menu {
+    background: #fff;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu-category h3 {
+    margin-bottom: 15px;
+}
+
+.menu-category p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* =====================================================
+   OPENING HOURS
+===================================================== */
+.hours {
+    background: #fdf2e9;
+}
+
+.hours h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+.gallery {
+    background: #eee;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 15px;
+}
+
+/* =====================================================
+   EVENTS & CATERING
+===================================================== */
+.events {
+    background: #fff;
+}
+
+/* =====================================================
+   TESTIMONIALS
+===================================================== */
+.testimonials {
+    background: #fdf2e9;
+}
+
+.testimonial {
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* =====================================================
+   FAQ
+===================================================== */
+.faq {
+    background: #fff;
+}
+
+.faq-item {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+/* =====================================================
+   POLICIES
+===================================================== */
+.policies {
+    background: #fdf2e9;
+    font-size: 14px;
+}
+
+/* =====================================================
+   CONTACT
+===================================================== */
+.contact {
+    background: #fff;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 25px;
+}
+
+/* =====================================================
+   WHATSAPP FLOAT
+===================================================== */
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25d366;
+    color: #fff;
+    padding: 16px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+<header>
+<div class="container">
+    <h1>Royal Spice Restaurant</h1>
+    <p>Authentic Indian Cuisine • Family Dining • Premium Taste Experience</p>
+    <a class="btn" href="#menu">Explore Menu</a>
+</div>
+</header>
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+<section class="about">
+<div class="container grid-2">
+    <div>
+        <h2>Our Story</h2>
+        <p>
+            Royal Spice Restaurant was founded with a vision to bring authentic Indian
+            flavours to food lovers who appreciate quality, hygiene, and tradition.
+        </p>
+        <p>
+            Every dish is prepared by experienced chefs using handpicked ingredients
+            and age-old recipes passed down through generations.
+        </p>
+        <p>
+            From casual dining to celebrations, Royal Spice is a place where memories
+            are made over great food.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1">
+</div>
+</section>
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+<section class="services">
+<div class="container">
+    <h2>What We Offer</h2>
+    <div class="grid-3">
+        <div class="card">Dine-In Experience</div>
+        <div class="card">Takeaway & Home Delivery</div>
+        <div class="card">Birthday & Party Catering</div>
+        <div class="card">Corporate Lunch Orders</div>
+        <div class="card">Family & Group Seating</div>
+        <div class="card">Custom Menu Options</div>
+    </div>
+</div>
+</section>
+
+<!-- =====================================================
+     MENU
+===================================================== -->
+<section class="menu" id="menu">
+<div class="container">
+    <h2>Our Menu</h2>
+
+    <div class="grid-3">
+        <div class="menu-category card">
+            <h3>Starters</h3>
+            <p>Paneer Tikka – ₹220</p>
+            <p>Veg Manchurian – ₹180</p>
+            <p>Hara Bhara Kabab – ₹190</p>
+        </div>
+
+        <div class="menu-category card">
+            <h3>Main Course</h3>
+            <p>Butter Paneer – ₹280</p>
+            <p>Dal Fry – ₹190</p>
+            <p>Chicken Curry – ₹320</p>
+        </div>
+
+        <div class="menu-category card">
+            <h3>Breads & Rice</h3>
+            <p>Butter Naan – ₹45</p>
+            <p>Jeera Rice – ₹180</p>
+            <p>Veg Fried Rice – ₹210</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- =====================================================
+     OPENING HOURS
+===================================================== -->
+<section class="hours">
+<div class="container">
+    <h2>Opening Hours</h2>
+    <div class="grid-3">
+        <div class="card">Monday – Friday<br><strong>11 AM – 11 PM</strong></div>
+        <div class="card">Saturday – Sunday<br><strong>10 AM – 12 AM</strong></div>
+        <div class="card">Home Delivery<br><strong>All Days</strong></div>
+    </div>
+</div>
+</section>
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+<section class="gallery">
+<div class="container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
+    </div>
+</div>
+</section>
+
+<!-- =====================================================
+     EVENTS
+===================================================== -->
+<section class="events">
+<div class="container grid-2">
+    <div>
+        <h2>Events & Catering</h2>
+        <p>
+            We provide catering services for weddings, birthdays, office events,
+            and private gatherings. Our team ensures timely service and exceptional taste.
+        </p>
+    </div>
+    <div class="card">
+        ✔ Custom Menus<br>
+        ✔ On-Time Delivery<br>
+        ✔ Professional Staff
+    </div>
+</div>
+</section>
+
+<!-- =====================================================
+     TESTIMONIALS
+===================================================== -->
+<section class="testimonials">
+<div class="container">
+    <h2>Customer Testimonials</h2>
+    <div class="grid-2">
+        <div class="card testimonial">
+            ⭐⭐⭐⭐⭐ “Amazing food and excellent service. Highly recommended!”
+        </div>
+        <div class="card testimonial">
+            ⭐⭐⭐⭐ “Great taste, clean environment, and friendly staff.”
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+<section class="faq">
+<div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">Do you offer takeaway? – Yes</div>
+    <div class="faq-item">Home delivery available? – Yes</div>
+    <div class="faq-item">Veg & Non-Veg options? – Yes</div>
+    <div class="faq-item">Party bookings? – Available</div>
+</div>
+</section>
+
+<!-- =====================================================
+     POLICIES
+===================================================== -->
+<section class="policies">
+<div class="container">
+    <h2>Restaurant Policies</h2>
+    <p>• Prices subject to change without notice.</p>
+    <p>• Outside food not allowed.</p>
+    <p>• Management reserves the right of admission.</p>
+</div>
+</section>
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+<section class="contact">
+<div class="container">
+    <h2>Contact & Location</h2>
+    <p><strong>Address:</strong> Matunga East, Mumbai</p>
+    <p><strong>Phone:</strong> +91 9XXXXXXXXX</p>
+    <iframe src="https://maps.google.com/maps?q=matunga%20mumbai&output=embed"
+        width="100%" height="250"></iframe>
+</div>
+</section>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer>
+<div class="container footer-grid">
+    <div>
+        <h3>Royal Spice</h3>
+        <p>Authentic Indian Restaurant</p>
+    </div>
+    <div>
+        <h3>Quick Links</h3>
+        <p>Menu</p>
+        <p>Gallery</p>
+        <p>Contact</p>
+    </div>
+    <div>
+        <h3>Credits</h3>
+        <p>Demo Website by <strong>MyNetic Technologies</strong></p>
+    </div>
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919999999999">💬</a>
+
+</body>
 </html>
