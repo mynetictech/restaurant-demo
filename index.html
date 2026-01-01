@@ -149,6 +149,8 @@ footer {
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 20px;
 }
+
+/* ===== WHATSAPP BUTTON ===== */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -159,6 +161,8 @@ footer {
     border-radius: 50%;
     text-decoration: none;
 }
+
+/* ===== VISITOR TEXT (LIGHT & STICKY) ===== */
 #visitor-text {
     position: fixed;
     left: 15px;
@@ -169,7 +173,6 @@ footer {
     z-index: 9999;
     pointer-events: none;
 }
-
 #visitor-text span {
     font-weight: 700;
 }
@@ -261,12 +264,8 @@ Whether you dine in or order online, our mission is to deliver taste and happine
 <section class="reviews">
 <div class="container">
 <h2>Customer Reviews</h2>
-<div class="review-box">
-⭐⭐⭐⭐⭐ Amazing food and great service!
-</div>
-<div class="review-box">
-⭐⭐⭐⭐ Hygienic and family friendly.
-</div>
+<div class="review-box">⭐⭐⭐⭐⭐ Amazing food and great service!</div>
+<div class="review-box">⭐⭐⭐⭐ Hygienic and family friendly.</div>
 </div>
 </section>
 
@@ -309,11 +308,15 @@ width="100%" height="250"></iframe>
 </div>
 </div>
 </footer>
-<div id="visitor-box">
-     Visitors<br>
-    <span id="visitor-count">Loading...</span>
+
+<!-- LIGHT VISITOR TEXT -->
+<div id="visitor-text">
+    Total Visitors: <span id="visitor-count">...</span>
 </div>
+
 <a class="whatsapp" href="https://wa.me/919999999999">💬</a>
+
+<!-- VISITOR COUNTER SCRIPT -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   fetch('https://api.countapi.xyz/hit/mynetictech-royalspice-demo/visits')
@@ -326,6 +329,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
+
 </body>
-    
 </html>
