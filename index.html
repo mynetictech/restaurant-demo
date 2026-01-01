@@ -159,25 +159,19 @@ footer {
     border-radius: 50%;
     text-decoration: none;
 }
-    #visitor-box {
+#visitor-text {
     position: fixed;
     left: 15px;
     bottom: 100px;
-    background: #c0392b;
-    color: #fff;
-    padding: 12px 14px;
-    border-radius: 8px;
+    color: rgba(255,255,255,0.85);
     font-size: 14px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-weight: 500;
     z-index: 9999;
+    pointer-events: none;
 }
 
-#visitor-box span {
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
-    margin-top: 5px;
+#visitor-text span {
+    font-weight: 700;
 }
 </style>
 </head>
@@ -315,22 +309,23 @@ width="100%" height="250"></iframe>
 </div>
 </div>
 </footer>
-<!-- Sticky Visitor Counter -->
 <div id="visitor-box">
-    👀 Visitors<br>
+     Visitors<br>
     <span id="visitor-count">Loading...</span>
 </div>
 <a class="whatsapp" href="https://wa.me/919999999999">💬</a>
-
-</body>
-    <script>
-fetch('https://api.countapi.xyz/hit/mynetictech-royalspice-demo/visits')
-.then(res => res.json())
-.then(data => {
-    document.getElementById('visitor-count').innerText = data.value;
-})
-.catch(() => {
-    document.getElementById('visitor-count').innerText = "N/A";
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('https://api.countapi.xyz/hit/mynetictech-royalspice-demo/visits')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('visitor-count').innerText = data.value;
+    })
+    .catch(() => {
+      document.getElementById('visitor-count').innerText = '—';
+    });
 });
-    </script>
+</script>
+</body>
+    
 </html>
